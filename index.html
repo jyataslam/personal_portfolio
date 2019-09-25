@@ -14,38 +14,52 @@
     <link rel="stylesheet" href="./assets/stylesheets/style.css">
     <link rel="stylesheet" href="./assets/stylesheets/nav.css">
     <link rel="stylesheet" href="./assets/stylesheets/hero.css">
+    <link rel="stylesheet" href="./assets/stylesheets/about.css">
 
     <title>Portfolio</title>
 </head>
 
 <body>
-    <nav id="navigation" class="navigation">
-        <div class="navigation-menu-wrapper">
-            <span class="navigation-line"></span>
-            <span class="navigation-line"></span>
-            <span class="navigation-line"></span>
-        </div>
-    </nav>
-
-    <!-- Create Full Screen Nav when open -->
-    <div id="nav-overlay" class="nav-overlay">
+    <!-- Create Side Nav when open -->
+    <div id="nav-menu" class="nav-menu">
 
     </div>
 
-    <!-- Landing section -->
-    <header id="hero" class="hero">
-        <div class="container">
-            <h1 class="hero-name clip-text clip-text-bg">Jason Yata</h1>
-            <h1 class="hero-title">
-                <span>Developer</span>
-                <span>Designer</span>
-                <span>Engineer</span>
-            </h1>
-            <section class="scroll-down-container">
-                <a><span></span><span></span><span></span></a>
-            </section>
+    <nav id="navigation" class="navigation">
+        <button id="nav-btn"><span></span><span></span><span></span></button>
+    </nav>
+
+
+    <!-- Main Content Wrapper | Put All Body Content Here -->
+    <div class="main" id="main">
+
+        <!-- Landing section -->
+        <header id="hero" class="hero">
+            <div class="container">
+                <h1 class="hero-name clip-text clip-text-bg">Jason Yata</h1>
+                <h1 class="hero-title">
+                    <span>Developer</span>
+                    <span>Designer</span>
+                    <span>Engineer</span>
+                </h1>
+                <section class="scroll-down-container">
+                    <a><span></span><span></span><span></span></a>
+                </section>
+            </div>
+        </header>
+
+
+        <!-- About section -->
+        <div id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <h1 class="about-title col-lg-6 col-md-12"><span class="underline-boost-up">About Me</span></h1>
+                    <p class="about-description col-lg-6 col-md-12">Hey there, my name is Jason Yata and I'm a front-end
+                        focused web developer based out of Orange County, CA.</p>
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
 
 
     <!-- Dependencies -->
