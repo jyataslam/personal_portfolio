@@ -44,6 +44,12 @@
     text-align: center;
     bottom: 4rem;
     left: 50%;
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+}
+
+.v-hidden {
+  opacity: 0;
 }
 
 .scroll-down-container a {
