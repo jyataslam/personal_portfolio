@@ -3,17 +3,29 @@
     padding: 120px 0;
     background-color: #000;
     color: #fff;
+    letter-spacing: 0.05rem;
 }
 
-
-/* About Me Hover Animation */
-.underline-boost-up {
-    background-image: linear-gradient(120deg, rgb(236, 153, 0) 0%, rgb(236, 153, 0) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 0 110%;
-    transition: background-size 0.12s ease-in;
+.about-title-photo-container {
+    display: flex;
+    flex-direction: column;
 }
-.underline-boost-up:hover {
-    background-size: 100% 88%;
+
+.about-photo-container {
+    height: 300px;
+}
+
+.about-photo {
+    height: 100%;
+    border-radius: 3px;
+}
+
+.about-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.about-description {
+    color: rgb(184, 184, 184);
 }
