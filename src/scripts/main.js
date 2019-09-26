@@ -4,7 +4,7 @@ $(document).ready(function(){
 });
 
 $(document).scroll(function(){
-    $(this).scrollTop() > 120 ?  $(scrollingArrows).addClass('v-hidden') : $(scrollingArrows).removeClass('v-hidden');
+    $(this).scrollTop() > 600 ?  $(scrollingArrows).addClass('v-hidden') : $(scrollingArrows).removeClass('v-hidden');
 })
 
 
@@ -18,13 +18,13 @@ let body = $('body');
 handleNavAnimationClick = () => {
     if ($(navBtn).hasClass('on')){
         $(navBtn).removeClass('on');
-        $(sidenav).removeClass('width-250');
-        $(main).removeClass('mr-250');
+        $(sidenav).removeClass('sidenav-transform-x');
+        $(main).removeClass('main-transform-x');
         $(body).removeClass('no-scroll');
     } else {
         $(navBtn).addClass('on');
-        $(sidenav).addClass('width-250');
-        $(main).addClass('mr-250');
+        $(sidenav).addClass('sidenav-transform-x');
+        $(main).addClass('main-transform-x');
         $(body).addClass('no-scroll');
     }
 }

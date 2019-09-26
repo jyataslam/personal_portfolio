@@ -2,8 +2,23 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .main {
-    transition: margin-right .5s;
+    transition: all .5s;
+}
+
+/* Hover Section Title Animation */
+.underline-boost-up {
+    background-image: linear-gradient(120deg, rgb(236, 153, 0) 0%, rgb(236, 153, 0) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 110%;
+    transition: background-size 0.12s ease-in;
+}
+
+.underline-boost-up:hover {
+    background-size: 100% 88%;
 }
