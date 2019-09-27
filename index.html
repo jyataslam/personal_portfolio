@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
+    <!-- Flickity Carousel -->
+    <link rel="stylesheet" href="./assets/stylesheets/flickity.css">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:700,900&display=swap" rel="stylesheet">
 
@@ -18,6 +21,7 @@
     <link rel="stylesheet" href="./assets/stylesheets/nav.css">
     <link rel="stylesheet" href="./assets/stylesheets/hero.css">
     <link rel="stylesheet" href="./assets/stylesheets/about.css">
+    <link rel="stylesheet" href="./assets/stylesheets/projects.css">
 
     <title>Portfolio</title>
 
@@ -46,7 +50,7 @@
     <!-- Main Content Wrapper | Put All Body Content Here -->
     <div class="main" id="main">
 
-        <!-- Landing section -->
+        <!-- Hero section -->
         <header id="hero" class="hero">
             <div class="container">
                 <h1 class="hero-name clip-text clip-text-bg">Jason Yata</h1>
@@ -60,10 +64,11 @@
                 </section>
             </div>
         </header>
+        <!-- End of Hero Section -->
 
 
         <!-- About section -->
-        <div id="about" class="about">
+        <section id="about" class="about">
             <div class="container">
                 <div class="row">
                     <div class="about-title-photo-container col-lg-6 col-md-12">
@@ -76,7 +81,33 @@
                         focused web developer based out of Orange County, CA.</p>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- End of About section -->
+
+
+        <!-- Projects section -->
+        <section id="projects" class="projects">
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell">
+                    <img src="./assets/images/carousel-images/huntington-digital.png" alt="huntington digital" class="carousel-inner-image"/>
+                </div>
+                <div class="carousel-cell">
+                    <img src="./assets/images/carousel-images/specialty-coaches.png" alt="specialty coaches" class="carousel-inner-image"/>
+                </div>
+                <div class="carousel-cell">
+                    <img src="./assets/images/carousel-images/pocket-statz.png" alt="pocket statz" class="carousel-inner-image"/>
+                </div>
+                <div class="carousel-cell">
+                    <img src="./assets/images/carousel-images/study-finder.png" alt="study finder" class="carousel-inner-image"/>
+                </div>
+                <div class="carousel-cell">
+                    <img src="./assets/images/carousel-images/ygc.png" alt="your gut connection" class="carousel-inner-image"/>
+                </div>
+            </div>
+        </section>
+        <!-- End of Projects Section -->
+
+
     </div>
 
 
@@ -91,6 +122,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
         </script>
+    <script src="./src/scripts/flickity.js"></script>
 
     <!-- Javascript Files -->
     <script src="./src/scripts/main.js"></script>

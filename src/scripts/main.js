@@ -31,3 +31,23 @@ handleNavAnimationClick = () => {
 
 // Hero
 let scrollingArrows = $('.scroll-down-container');
+
+// Projects Carousel (Flickity)
+// let $carousel = $('.carousel').flickity({
+//     imagesLoaded: true,
+//     percentPosition: false,
+// });
+  
+// let $imgs = $carousel.find('.carousel-cell img');
+// let docStyle = document.documentElement.style;
+// let transformProp = typeof docStyle.transform == 'string' ?
+//     'transform' : 'WebkitTransform';
+// let flkty = $carousel.data('flickity');
+  
+// $carousel.on( 'scroll.flickity', function() {
+//     flkty.slides.forEach( function( slide, i ) {
+//         let img = $imgs[i];
+//         let x = ( slide.target + flkty.x ) * -1/3;
+//         img.style[ transformProp ] = 'translateX(' + x  + 'px)';
+//     });
+// });
