@@ -1,0 +1,28 @@
+
+.flickity-viewport {
+    height: 440px !important;
+}
+
+.carousel-cell {
+    height: 450px;
+    width: 925px;
+    margin: 0 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.carousel-cell img {
+    width: 100%;
+    transition: all .5s;
+}
+
+.carousel-cell img:hover {
+    opacity: .5;
+    transform: scale(1.1);
+}
+
+.flickity-button {
+    background: transparent;
+    color: orange;
+}
