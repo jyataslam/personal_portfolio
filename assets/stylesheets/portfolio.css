@@ -1,0 +1,11 @@
+
+.portfolio-flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.port-item {
+    width: calc( 33.333333333333336% - 0px );
+    margin: 0px;
+}

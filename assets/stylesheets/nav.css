@@ -21,7 +21,7 @@
 
 .navigation-line {
     height: 2px;
-    background-color: #fff;
+    background-color: rgba(39, 39, 39, 0.753);
     border-radius: 25px;
     width: 70%;
     margin: 0 auto;
@@ -44,10 +44,10 @@
 #nav-btn span {
     position: absolute;
     width: 50px;
-    height: 4px;
+    height: 1px;
     top: 50%;
     left: 50%;
-    background: #fff;
+    background: rgba(39, 39, 39, 0.753);
     border-radius: 2px;
     overflow: hidden;
     transition: all 0.3s linear;
@@ -67,16 +67,19 @@
 #nav-btn span:nth-child(1) {
     animation: span-first-off 0.5s ease-in-out;
     animation-fill-mode: forwards;
+    top: 40%;
 }
 
 #nav-btn span:nth-child(2) {
     animation: span-second-off 0.5s ease-in-out;
     animation-fill-mode: forwards;
+    top: 46%;
 }
 
 #nav-btn span:nth-child(3) {
     animation: span-third-off 0.5s ease-in-out;
     animation-fill-mode: forwards;
+    top: 52%;
 }
   
 #nav-btn.on:hover span::before {
@@ -88,18 +91,21 @@
     background: rgb(172, 172, 172);
     animation: span-first-on 0.5s ease-in-out;
     animation-fill-mode: forwards;
+    top: 50%;
 }
 
 #nav-btn.on span:nth-child(2) {
     background: rgb(172, 172, 172);
     animation: span-second-on 0.5s ease-in-out;
     animation-fill-mode: forwards;
+    top: 50%;
 }
 
 #nav-btn.on span:nth-child(3) {
     background: rgb(172, 172, 172);
     animation: span-third-on 0.5s ease-in-out;
     animation-fill-mode: forwards;
+    top: 50%;
 }
   
 @keyframes span-first-on {
@@ -184,8 +190,7 @@
     z-index: 1;
     top: 0;
     right: 0;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(56,56,56,1) 100%);
+    background: white;
     padding: 120px 0;
     transform: translateX(250px);
     transition: .5s;
@@ -205,6 +210,6 @@
 
 .nav-menu-list {
   list-style-type: none;
-  color: #fff;
+  color: rgba(39, 39, 39, 0.753);
   letter-spacing: 0.2rem;
 }
