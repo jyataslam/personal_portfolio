@@ -1,37 +1,55 @@
 
 #hero {
-    background-color: #000;
+    /* background-color: #000; */
+    background: url(../images/about-hiking-fade.jpg);
     min-height: 100vh;
     color: #fff;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 }
 
 .hero-name {
+    text-align: center;
     font-size: 8rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     text-transform: uppercase;
     font-weight: 900;
-    padding: 35vh 0 0 0;
+    padding: 15vh 0 0 0;
+}
+
+.hero-name-title {
+    color: rgba(39, 39, 39, 0.753);
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 15vh 0 0 0;
+    letter-spacing: 0.13rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .hero-title {
-    font-size: 2rem;
+    color: rgba(39, 39, 39, 0.753);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.1rem;
 }
 
 .hero-title span:nth-child(1) {
-    border-right: 2px solid white;
+    border-right: 1px solid rgba(39, 39, 39, 0.397);
     padding-right: .5rem;
 }
 
 .hero-title span:nth-child(2) {
-    border-right: 2px solid white;
+    border-right: 1px solid rgba(39, 39, 39, 0.397);
     padding-right: .5rem;
 }
 
@@ -65,8 +83,8 @@
     width: 24px;
     height: 24px;
     margin-left: -12px;
-    border-left: 1px solid #ffffff7d;
-    border-bottom: 1px solid #ffffff7d;
+    border-left: 1px solid rgba(39, 39, 39, 0.753);
+    border-bottom: 1px solid rgba(39, 39, 39, 0.753);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-animation: up-and-down-bounce 2s infinite;
@@ -154,7 +172,7 @@
 }
 
 .clip-text-bg {
-    background-image: url(../images/hero-bg-text.jpg);
+    background-image: url(../images/hero-title-test.jpg);
 }
 
 

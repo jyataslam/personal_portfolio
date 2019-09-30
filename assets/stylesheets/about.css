@@ -1,8 +1,8 @@
 
 .about {
-    padding: 120px 0;
-    background-color: #000;
-    color: #fff;
+    padding: 90px 0;
+    background-color: white;
+    color: rgba(39, 39, 39, 0.753);
     letter-spacing: 0.05rem;
 }
 
@@ -17,15 +17,25 @@
 
 .about-photo {
     height: 100%;
-    border-radius: 3px;
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
 }
 
 .about-title {
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
+    color: rgba(139, 139, 139, 0.623);
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    letter-spacing: .11rem;
 }
 
 .about-description {
-    color: rgb(184, 184, 184);
+    text-align: center;
+    font-size: .875rem;
+    color: rgb(128, 128, 128);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.08rem;
 }

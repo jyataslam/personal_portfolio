@@ -1,4 +1,8 @@
 
+.projects {
+    padding: 80px 0;
+}
+
 .flickity-viewport {
     height: 440px !important;
 }
@@ -15,6 +19,8 @@
 .carousel-cell img {
     width: 100%;
     transition: all .5s;
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
 }
 
 .carousel-cell img:hover {
