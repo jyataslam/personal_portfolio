@@ -1,11 +1,44 @@
+.portfolio {
+    padding: 80px 0;
+}
 
 .portfolio-flex-wrapper {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
-.port-item {
-    width: calc( 33.333333333333336% - 0px );
-    margin: 0px;
+.portfolio-item {
+    width: 33.333%;
+    background: #000;
+    overflow: hidden;
+}
+
+.portfolio-item:after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+.portfolio-item-image {
+    height: 100%;
+    width: 100%;
+    -webkit-transition: opacity .3s ease-in;
+    transition: opacity .3s ease-in;
+}
+
+.item-one-image {
+    background: url(../images/carousel-images/huntington-digital.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    -webkit-transition: opacity .3s ease-in;
+    transition: opacity .3s ease-in;
+}
+
+.item-one-image:hover {
+    opacity: 0;
+}
+
+.portfolio-underlay {
+    z-index: -1;
 }
