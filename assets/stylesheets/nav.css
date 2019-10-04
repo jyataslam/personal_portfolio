@@ -1,5 +1,77 @@
 
+@font-face {
+  font-family: 'Futura';
+  src: url(../fonts/FuturaPTBold.otf);
+}
+
+/* Desktop Nav */
 .navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.nav-wrapper {
+    display: flex;
+    max-width: 1440px;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 95px;
+    padding-right: 95px;
+}
+
+.nav-logo-container {
+    display: flex;
+    text-align: left;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    text-align: right;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.nav-link-d {
+    color: #fff;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+    font-family: 'Futura', sans-serif;
+    letter-spacing: .15rem;
+}
+
+.nav-link-d:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-logo {
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.side-navigation {
     background-color: transparent;
     height: 64px;
     width: 64px;
@@ -9,6 +81,7 @@
     position: sticky;
     top: .5rem;
     z-index: 5;
+    display: none;
 }
 
 .navigation-menu-wrapper {
