@@ -1,13 +1,32 @@
 
+@font-face {
+    font-family: 'Futura';
+    src: url(../fonts/FuturaPTBold.otf);
+}
+
+@font-face {
+    font-family: 'Futura Lt';
+    src: url(../fonts/FuturaPTLight.otf);
+}
+
+@font-face {
+    font-family: 'Futura Md';
+    src: url(../fonts/FuturaPTMedium.otf);
+}
+
 #hero {
-    /* background-color: #000; */
-    background: url(../images/about-hiking-fade.jpg);
+    background: url(../images/abstract-expressionism-art-background-2011824.jpg);
     min-height: 100vh;
     color: #fff;
     background-attachment: scroll;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-name {
@@ -21,36 +40,53 @@
 }
 
 .hero-name-title {
-    color: rgba(39, 39, 39, 0.753);
+    color: white;
     text-align: center;
     font-size: 6rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-family: 'Futura', sans-serif;
     text-transform: uppercase;
-    padding: 15vh 0 0 0;
-    letter-spacing: 0.13rem;
+    padding: 32vh 0 0 0;
+    letter-spacing: 0.4rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .hero-title {
-    color: rgba(39, 39, 39, 0.753);
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
     font-weight: 300;
-    letter-spacing: 0.1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.13rem;
 }
 
 .hero-title span:nth-child(1) {
-    border-right: 1px solid rgba(39, 39, 39, 0.397);
+    border-right: 1px solid white;
     padding-right: .5rem;
 }
 
 .hero-title span:nth-child(2) {
-    border-right: 1px solid rgba(39, 39, 39, 0.397);
+    border-right: 1px solid white;
     padding-right: .5rem;
+}
+
+.hero-button {
+    font-family: 'Futura Md', sans-serif;
+    font-size: 1.2rem;
+    margin: 1.5rem auto 0;
+    border-radius: 25px;
+    padding: 8px 24px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    letter-spacing: .08rem;
+    transition: all .2s ease;
+}
+
+.hero-button:hover {
+    background: white;
+    color: black;
 }
 
 
@@ -83,8 +119,8 @@
     width: 24px;
     height: 24px;
     margin-left: -12px;
-    border-left: 1px solid rgba(39, 39, 39, 0.753);
-    border-bottom: 1px solid rgba(39, 39, 39, 0.753);
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-animation: up-and-down-bounce 2s infinite;
