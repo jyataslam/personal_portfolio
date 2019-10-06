@@ -4,6 +4,11 @@
   src: url(../fonts/FuturaPTBold.otf);
 }
 
+@font-face {
+  font-family: 'Futura Lt';
+  src: url(../fonts/FuturaPTLight.otf);
+}
+
 /* Desktop Nav */
 .navigation {
     position: absolute;
@@ -11,6 +16,7 @@
     left: 0;
     width: 100%;
     background-color: transparent;
+    transition: all .5s ease-in-out;
 }
 
 .nav-wrapper {
@@ -94,7 +100,7 @@
 
 .navigation-line {
     height: 2px;
-    background-color: rgba(39, 39, 39, 0.753);
+    background-color: white;
     border-radius: 25px;
     width: 70%;
     margin: 0 auto;
@@ -112,47 +118,48 @@
     border-radius: 50%;
     border: none;
     outline: none;
+    transition: margin .2s;
   }
 
-#nav-btn span {
+.nav-span {
     position: absolute;
     width: 50px;
-    height: 1px;
+    height: 2px;
     top: 50%;
     left: 50%;
-    background: rgba(39, 39, 39, 0.753);
+    background: white;
     border-radius: 2px;
     overflow: hidden;
     transition: all 0.3s linear;
 }
 
-#nav-btn span::before {
+.nav-span::before {
     content: "";
     position: absolute;
     width: 0;
     height: 100%;
     top: 0;
     right: 0;
-    background: rgb(172, 172, 172);
+    background: white;
     transition: all 0.3s linear;
 }
 
-#nav-btn span:nth-child(1) {
+.nav-span:nth-child(1) {
     animation: span-first-off 0.5s ease-in-out;
     animation-fill-mode: forwards;
     top: 40%;
 }
 
-#nav-btn span:nth-child(2) {
+.nav-span:nth-child(2) {
     animation: span-second-off 0.5s ease-in-out;
     animation-fill-mode: forwards;
-    top: 46%;
+    top: 49%;
 }
 
-#nav-btn span:nth-child(3) {
+.nav-span:nth-child(3) {
     animation: span-third-off 0.5s ease-in-out;
     animation-fill-mode: forwards;
-    top: 52%;
+    top: 59%;
 }
   
 #nav-btn.on:hover span::before {
@@ -161,25 +168,26 @@
 }
 
 #nav-btn.on span:nth-child(1) {
-    background: rgb(172, 172, 172);
+    background: white;
     animation: span-first-on 0.5s ease-in-out;
     animation-fill-mode: forwards;
     top: 50%;
 }
 
 #nav-btn.on span:nth-child(2) {
-    background: rgb(172, 172, 172);
+    background: white;
     animation: span-second-on 0.5s ease-in-out;
     animation-fill-mode: forwards;
     top: 50%;
 }
 
 #nav-btn.on span:nth-child(3) {
-    background: rgb(172, 172, 172);
+    background: white;
     animation: span-third-on 0.5s ease-in-out;
     animation-fill-mode: forwards;
     top: 50%;
 }
+
   
 @keyframes span-first-on {
     0% {
@@ -254,18 +262,26 @@
     }
 }
 
+.turn-span-black {
+  background: black;
+}
+
+.move-navbox-down {
+  margin-top: .5rem;
+}
+
 
 /* Side Nav */
 .nav-menu {
     height: 100vh;
-    width: 250px;
+    width: 100vw;
     position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
-    background: white;
-    padding: 120px 0;
-    transform: translateX(250px);
+    background: #e02b41;
+    padding: 50px 0;
+    transform: translateX(100vw);
     transition: .5s;
 }
 
@@ -274,7 +290,7 @@
 }
 
 .main-transform-x {
-    transform: translateX(-250px);
+    transform: translateX(-100vw);
 }
 
 .sidenav-transform-x {
@@ -285,4 +301,86 @@
   list-style-type: none;
   color: rgba(39, 39, 39, 0.753);
   letter-spacing: 0.2rem;
+  margin: 0 0 0 2rem;
+  padding: 0;
+}
+
+.nav-menu-list-item {
+  color: white;
+  font-size: 1.5rem;
+  padding-bottom: .5rem;
+  font-family: 'Futura Lt', sans-serif;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px){
+  .navigation {
+    position: fixed;
+    top: 0;
+    background: white;
+    height: 64px;
+  }
+
+  .side-navigation {
+    margin-top: 0;
+    top: 0;
+  }
+
+  .nav-span {
+    background: black;
+    height: 1px;
+  }
+
+  .side-navigation {
+    display: inline-block;
+  }
+
+  .nav-wrapper {
+    padding: 0 0 0 25px;
+    height: 100%;
+  }
+
+  .nav-logo {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 414px){
+  #nav-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .side-navigation {
+    margin: 0 1rem 0 0;
+    width: 50px;
+    height: 50px;
+    top: 0;
+  }
+
+  .nav-span {
+    height: 1px;
+    width: 35px;
+  }
+
+  .navigation {
+    height: 50px;
+  }
+
+  .nav-wrapper {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .nav-logo {
+    font-size: .8rem;
+  }
 }
