@@ -15,6 +15,19 @@
     height: 300px;
 }
 
+.about-image-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    order: 1;
+}
+
+.about-image {
+    height: 400px;
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+}
+
 .about-photo {
     height: 100%;
     -webkit-filter: grayscale(50%);
@@ -22,7 +35,7 @@
 }
 
 .about-title {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Futura Lt', sans-serif;
     color: rgb(24, 24, 24);
     font-weight: 300;
     font-size: 1.8rem;
@@ -35,7 +48,9 @@
     text-align: center;
     font-size: 1rem;
     color: rgb(46, 46, 46);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 200;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 300;
     letter-spacing: 0.08rem;
+    order: 2;
+    margin: auto;
 }
