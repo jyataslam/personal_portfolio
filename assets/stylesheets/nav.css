@@ -1,14 +1,4 @@
 
-@font-face {
-  font-family: 'Futura';
-  src: url(../fonts/FuturaPTBold.otf);
-}
-
-@font-face {
-  font-family: 'Futura Lt';
-  src: url(../fonts/FuturaPTLight.otf);
-}
-
 /* Desktop Nav */
 .navigation {
     position: absolute;
